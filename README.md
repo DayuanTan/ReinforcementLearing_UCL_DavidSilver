@@ -2,6 +2,7 @@
 
 David Silver's website: https://www.davidsilver.uk/teaching/
 
+## Lectures
 
 - Lecture 1: Introduction to Reinforcement Learning
   - [My note](notes/lec1_intro_RL.md)  
@@ -24,5 +25,6 @@ David Silver's website: https://www.davidsilver.uk/teaching/
 - Lecture 10: Case Study: RL in Classic Games
   - [My note](notes) 
 
+## Other resources
 - All slides [here](slides/)
 - Assignments and Exams and Answers [here](assigns_exams/)
