@@ -24,5 +24,5 @@ David Silver's website: https://www.davidsilver.uk/teaching/
 - Lecture 10: Case Study: RL in Classic Games
   - [My note](notes) 
 
-- All slides [here](sldies/)
+- All slides [here](slides/)
 - Assignments and Exams and Answers [here](assigns_exams/)
