@@ -23,7 +23,7 @@ https://www.youtube.com/watch?v=2pWv7GOvuf0
     - Policy 
         - A map from state to action
         - Deterministic policy: a = pi(s)
-        - Stochastic policy: pi(a|s) = $$P[A_t=a | S_t = s]$$
+        - Stochastic policy: pi(a|s) = P[A_t=a | S_t = s]
     - Value function
         - A prediction of future reward
     - Model
