@@ -40,7 +40,13 @@ David Silver's website: https://www.davidsilver.uk/teaching/
             - q_pi(s, a) = E_pi[ G_t | S_t = s, A_t = a ]
     - Optimal Value Function
         - Solve q_*(s, a)
-        - Finding an optimal policy 
+        - Finding an optimal policy - Solving the Bellman Optimality Equation
+            - Non-linear, no closed solution
+            - iterative solution:
+                - Value iteration
+                - Policy iteration
+                - Q-learning
+                - Sarsa
 ### Lecture 3: Planning by Dynamic Programming
   - [Annotated slide by me](./slides/lec3_planning_by_DP.pdf)
 ### Lecture 4: Model-Free Prediction
