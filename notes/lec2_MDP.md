@@ -32,18 +32,79 @@ https://www.youtube.com/watch?v=lfHX2hHRMVQ
 - Markov Reward Processes
     - Markov reward process (MRP) is a Markov chain with values
         - Is a tuple <S, P, R, gamma>
-            - R is a reward function R_s = E[ R_(t+1) | S_t = s ] 
+            - S is a set of states
+            - P is state transition probability matrix
+            - P_ss' = P[ S_t+1 = s' | S_t = s ]
+            - R is a reward function, R_s = E[ R_(t+1) | S_t = s ]. R_s means, for time t and state s, how much reward we can get in t+1, i.e. R_(t+1).
+            - gamma is a discount factor. gamma \in [0, 1]
     - Return
         - G_t is the total discounted reward from time step t. G stands for goal.
         - G_t = R_t+1 + gamma * R_t+2 + gamma^2 * R_t+3 + …
+        - This values immediate reward above delayed rewards. (We prefer closer reward.)
         - Why discount?
             - Most Markov reward and decision process are discounted.
+            - Because we don't have a perfect model. We may don't trust our plan/model for future. Uncertainty about the future may not be fully represented.
+            - Mathematically  convenient to discount rewards.
+            - Avoids infinite returns in cyclic Markov processes.
+            - Animal/human prefer immediate reward.
     - Value function
         - Value function v(s) gives the long term value of state s
         - The state value function v(s) of an MRP is the expected return starting from state s
             - v(s) = E[ G_t | S_t = s ]
         - E.g.: Student MRP returns
+          - Starting from S_1 = C1 with gamma = 1/2
+          - G_1 = R_2 + gamma*R_3 + ... + gamma^(T-2) * R_T
+          - C1 C2 C3 Pass Sleep:
+            - v_1  = -2 - 2 * 0.5 - 2 * 0.25 + 10 * 0.125 = -2.25
+    - Bellman Equation for MRPs
+      - The value function can be decomposed into 2 parts:
+        - immediate reward R_t+1
+        - discounted value of successor state gamma*v(S_t+1)
+        - v(s) = E[ G_t | S_t = s ]
+                = E[ R_t+1 + gamma*v(S_t+1) | S_t = s]
+    - Bellman Equation in Matrix Form
+    - Solving the Bellman Equation
+      - Bellman equation is a linear equation
+      - For small MRPs: just solve directly, O(n^3)
+      - For large MRPs:
+        - Dynamic programming
+        - Monte-Carlo evaluation
+        - Temporal-Difference learning
+
 - Markov Decision Processes
-    - s  
+    - A Markov Decision Process (MDP) is a Markov Reward Process with decisions. It is an environment in which all states are Markov.
+    - MDP is a tuple <S, A, P, R, gamma>
+        - S is a finite set of states
+        - A is a finite set of actions
+        - P is state transition probability matrix
+        - P^a_ss' = P[ S_t+1 = s' | S_t = s, A_t = a ]
+        - R is a reward function, R^a_s = E[ R_(t+1) | S_t = s, A_t = a ]. R_s means, for time t and state s, how much reward we can get in t+1, i.e. R_(t+1).
+        - gamma is a discount factor. gamma \in [0, 1]
+
+      - Example: Student MDP
+
+    - Policies
+      - A policy pi is a distribution over actions given states:
+        - pi(a|s) = P[ A_t = a | S_t = s]
+      - A policy fully defines the behaviour of an agent
+      - MDP policies depend on the current state (not the history)
+        - i.e. policies are stationary (time-independent)
+
+    - Given an MDP M = <S, A, P, R, gamma> and a policy pi
+      - The state sequence S_1, S_2, ... is a Markov process <S, P^pi>
+      - The state and reward sequence S_1, R_2, S_2, ... is a Markov Reward Process <S, P^pi, R^pi, gamma>
+    
+    - Value Function
+      - State-value function: tell us how good to be a specific state s
+        - The state-value function V_pi(s) of an MDP is the expected return starting from state s, and the following policy pi
+        - v_pi(s) = E_pi[ G_t | S_t = s ]
+      - Action-value funtion: tell us how good to take a specific action from a specific state
+        - The action-value function q_pi(s, a) is the expected return starting from state s, taking action a, and then following policy pi
+        - q_pi(s, a) = E_pi[ G_t | S_t = s, A_t = a ]
+    - Bellman Expectation Equation
+      - The state-value function can again be decomposed 
+      - The action-value function can similarly be decomposed
+
+
 - Extensions to MDPs
 
