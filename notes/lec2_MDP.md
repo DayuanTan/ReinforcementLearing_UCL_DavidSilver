@@ -114,6 +114,8 @@ https://www.youtube.com/watch?v=lfHX2hHRMVQ
 - Optimal Value Function
     - How to find the best  possible solution to MDP
     - The optimal state-value function V_*(s) is the maximum value function over all policies.
+    - The optimal action-value function q_*(s, a) is the maximum action-value function over all poliies.
+    - Goal: solve q_*
 
 
 # Extensions to MDPs
