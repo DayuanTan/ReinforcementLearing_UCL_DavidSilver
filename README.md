@@ -2,6 +2,10 @@
 
 David Silver's website: https://www.davidsilver.uk/teaching/
 
+## Textbook 
+
+Textbook is *Reinforcement Learning: An Introduction* by Richard S. Sutton and Andrew G. Barto.
+
 ## Lectures
 
 ### Lecture 1: Introduction to Reinforcement Learning
@@ -81,6 +85,14 @@ David Silver's website: https://www.davidsilver.uk/teaching/
             - Sarsa
 ### Lecture 3: Planning by Dynamic Programming
 - [Annotated slide by me](./slides/lec3_planning_by_DP.pdf)
+
+|Problem|Bellman Equation|Algorithm|
+|-|-|-|
+|Prediction|Bellman Expectation Equation|Iterative Policy Evalucatin|
+|Control|Bellman Expectation Equation + Greedy Policy Improvement|Policy Iterration|
+|Control|Bellman Optimality Equation|Value Iteration|
+||
+
 
 
 ### Lecture 4: Model-Free Prediction
