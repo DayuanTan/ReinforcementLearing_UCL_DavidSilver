@@ -80,21 +80,23 @@ David Silver's website: https://www.davidsilver.uk/teaching/
             - Q-learning
             - Sarsa
 ### Lecture 3: Planning by Dynamic Programming
-  - [Annotated slide by me](./slides/lec3_planning_by_DP.pdf)
+- [Annotated slide by me](./slides/lec3_planning_by_DP.pdf)
+
+
 ### Lecture 4: Model-Free Prediction
-  - [Annotated slide by me](./slides/lec4_model_free_prediction_MC-TD.pdf)
+- [Annotated slide by me](./slides/lec4_model_free_prediction_MC-TD.pdf)
 ### Lecture 5: Model-Free Control
-  - [Annotated slide by me](./slides/lec5_model_free_control.pdf) 
+- [Annotated slide by me](./slides/lec5_model_free_control.pdf) 
 ### Lecture 6: Value Function Approximation
-  - [Annotated slide by me](./slides/lec6_value_Function_Approx.pdf)
+- [Annotated slide by me](./slides/lec6_value_Function_Approx.pdf)
 ### Lecture 7: Policy Gradient Methods
-  - [Annotated slide by me](./slides/lec7_policy_gradient_pg.pdf) 
+- [Annotated slide by me](./slides/lec7_policy_gradient_pg.pdf) 
 ### Lecture 8: Integrating Learning and Planning
-  - [Annotated slide by me](./slides/lec8_integrating_learning_and_planning_dyna.pdf) 
+- [Annotated slide by me](./slides/lec8_integrating_learning_and_planning_dyna.pdf) 
 ### Lecture 9: Exploration and Exploitation
-  - [Annotated slide by me](./slides/lec9_exploration_and_exploitation_XX.pdf) 
+- [Annotated slide by me](./slides/lec9_exploration_and_exploitation_XX.pdf) 
 ### Lecture 10: Case Study: RL in Classic Games
-  - [Annotated slide by me](./slides/lec10_classic_games.pdf) 
+- [Annotated slide by me](./slides/lec10_classic_games.pdf) 
 
 ## Other resources
 - All slides [here](slides/)
