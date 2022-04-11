@@ -13,7 +13,7 @@ Textbook is *Reinforcement Learning: An Introduction* by Richard S. Sutton and A
 - RL diff form other ML
     - No supervisor, only a reward signal
     - Feedback is delayed, not instantaneous
-    - Time reall y matters ( se q uential, non i.i.d data)
+    - Time reall y matters ( sequential, non i.i.d data)
     - Agent’s actions affect the subsequent data it receives
 - Major Components of an RL Agent
     - Policy: is the agent’s behaviour. It is a map from state to action.
@@ -86,11 +86,11 @@ Textbook is *Reinforcement Learning: An Introduction* by Richard S. Sutton and A
 ### Lecture 3: Planning by Dynamic Programming
 - [Annotated slide by me](./slides/lec3_planning_by_DP.pdf)
 
-|Problem|Bellman Equation|Algorithm|
-|-|-|-|
-|Prediction|Bellman Expectation Equation|Iterative Policy Evalucatin|
-|Control|Bellman Expectation Equation + Greedy Policy Improvement|Policy Iterration|
-|Control|Bellman Optimality Equation|Value Iteration|
+|Problem|Bellman Equation|Algorithm|Note|
+|-|-|-|-|
+|Prediction|Bellman Expectation Equation|Iterative Policy Evalucatin||
+|Control|Bellman Expectation Equation + Greedy Policy Improvement|Policy Iteration|This policy iteration always converges to pi_*|
+|Control|Bellman Optimality Equation|Value Iteration|Converge to v_*. There is no explicit policy. Intermediate value functions may not correspond to any policy.|
 ||
 
 
