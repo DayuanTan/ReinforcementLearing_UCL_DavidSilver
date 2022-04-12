@@ -97,6 +97,30 @@ Textbook is *Reinforcement Learning: An Introduction* by Richard S. Sutton and A
 
 ### Lecture 4: Model-Free Prediction
 - [Annotated slide by me](./slides/lec4_model_free_prediction_MC-TD.pdf)
+
+|Planning By DP|Model-free Prediction|Model-free Control|
+|-|-|-|
+|Solve a known MDP|Estimate the value fucntion of an Unknown MDP|Solve an unknown MDP|
+||
+
+- Monte Carlo Policy Evaluation
+  - Use empirical mean return, Use complete episode
+    - First-visit VS Every-visit Monte-Carlo policy Evaluation
+    - Incremental Monte-Carlo updates
+    - Equation: V(S_t) <- V(S_t) + alpha * ( G_t - V(S_t) )
+- Temporal Difference TD(0)
+  - Use esitmated return of next state, Use partial episode 
+    - Equation: V(S_t) <- V(S_t) + alpha * ( R_{t+1}+gamma*V(S_{t+1}) - V(S_t) )
+- TD(lambda)
+  - Instead of only consider one step ahead, we can consider n steps ahead. When n = infinite, TD(lambda) = MC.
+  - TD(lambda) weighting equation
+    - Forward View: Using weight (1 − λ)*λ^{n−1}. Sum = 1.
+    - Backward View: Using eligibility trace. 
+
+
+
+
+
 ### Lecture 5: Model-Free Control
 - [Annotated slide by me](./slides/lec5_model_free_control.pdf) 
 ### Lecture 6: Value Function Approximation
