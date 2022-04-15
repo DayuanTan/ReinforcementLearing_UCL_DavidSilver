@@ -123,6 +123,24 @@ Textbook is *Reinforcement Learning: An Introduction* by Richard S. Sutton and A
 
 ### Lecture 5: Model-Free Control
 - [Annotated slide by me](./slides/lec5_model_free_control.pdf) 
+
+- On policy 
+  - Learn about policy pi and sample from policy pi
+- Off policy
+  - Learn about traget policy pi and sample from behavior policy mu
+
+||Generalized Policy Iteraton w/ MC using State-Value func V|using Action-Value func Q (MC Policy Iteration)|MC Control|TD Control (Sarsa)|Importance Sampling (MC, TD)|Q-learning|
+|-|-|-|-|-|-|-|
+|Policy Evaluation|MC policy evaluation, V = v_pi|MC policy evaluation, Q = q_pi|MC policy evaluation, Q = q_pi|Sarsa (TD Target), Q ~=~= q_pi|V. MC: importance sampling corrections along whole episode; TD: one step importance sampling correction.|Q-Learning Target. |
+|Policy Improvement|Greedy|epsilon-Greedy|epsilon-Greedy|epsilon-Greedy|Target policy: maybe Greedy;    Behavior policy:  maybe Greedy.|Target policy: Greedy;  Behavior policy: epsilon-Greedy|
+|Model based/free?|Need model|Model free|Model free|Model free|Model free|Model free|
+|On-Off-Policy?|On policy|On policy|On policy|On policy|Off policy|Off policy|
+|Update frequence|After over all episodes|After over all episodes|Every episode|Every time-step|Every episode (MC, TD); Every time-step (TD).|Every time-step|
+|On-Off-Line?|Offline|Offline|Offline|Online|Offline (MC);Online (TD)|Online|
+|Complete Sequence?|Complete episode|Complete episode|Complete episode|Incomplete episode. Bootstrapping|MC/TD|Incomplete episode. Bootstrapping|
+
+![](img/lec5.png)
+
 ### Lecture 6: Value Function Approximation
 - [Annotated slide by me](./slides/lec6_value_Function_Approx.pdf)
 ### Lecture 7: Policy Gradient Methods
