@@ -4,7 +4,7 @@ David Silver's website: https://www.davidsilver.uk/teaching/
 
 ## Textbook 
 
-Textbook is *Reinforcement Learning: An Introduction* by Richard S. Sutton and Andrew G. Barto.
+Textbook is *Reinforcement Learning: An Introduction* by Richard S. Sutton and Andrew G. Barto. [PDF here](SuttonBartoIPRLBook2ndEd.pdf).
 
 ## Lectures
 
