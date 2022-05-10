@@ -83,7 +83,12 @@ Textbook is *Reinforcement Learning: An Introduction* by Richard S. Sutton and A
             - Policy iteration
             - Q-learning
             - Sarsa
-### Lecture 3: Planning by Dynamic Programming
+
+
+
+
+
+### Lecture 3: Planning by Dynamic Programming （for unknown MDP/ model-based)
 - [Annotated slide by me](./slides/lec3_planning_by_DP.pdf)
 
 |Problem|Bellman Equation|Algorithm|Note|
@@ -94,8 +99,21 @@ Textbook is *Reinforcement Learning: An Introduction* by Richard S. Sutton and A
 ||
 
 
+### Lecture 3-7:
 
-### Lecture 4: Model-Free Prediction
+- Lecture 3 Model-based: 
+  - Planning by Dynamic Programming (DP). Solve a known MDP.
+- Lecture 4-7 Model-free 
+  - Lecture 4 Prediction: 
+    - Esimate the value fucntion of an unknown MDP.
+  - Lecture 5 Model-free Control:
+    - Optimize the value function of an unknown MDP.
+  - Sacle up to real practical problems: Use function approximation.
+    - Lecture 6: Function approximation for value based algorithms 
+    - Lecture 7: Function approximation for policy based algorithms
+
+
+### Lecture 4: Model-Free Prediction (for unknown MDP)
 - [Annotated slide by me](./slides/lec4_model_free_prediction_MC-TD.pdf)
 
 |Planning By DP|Model-free Prediction|Model-free Control|
@@ -143,6 +161,8 @@ Textbook is *Reinforcement Learning: An Introduction* by Richard S. Sutton and A
 
 ### Lecture 6: Value Function Approximation
 - [Annotated slide by me](./slides/lec6_value_Function_Approx.pdf)
+
+
 ### Lecture 7: Policy Gradient Methods
 - [Annotated slide by me](./slides/lec7_policy_gradient_pg.pdf) 
 ### Lecture 8: Integrating Learning and Planning
