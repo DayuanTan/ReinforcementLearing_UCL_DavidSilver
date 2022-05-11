@@ -103,14 +103,30 @@ Textbook is *Reinforcement Learning: An Introduction* by Richard S. Sutton and A
 
 - Lecture 3 Model-based: 
   - Planning by Dynamic Programming (DP). Solve a known MDP.
+    - Policy Evaluation
+    - Policy Iteration
+    - Value Iteration
 - Lecture 4-7 Model-free 
   - Lecture 4 Prediction: 
     - Esimate the value fucntion of an unknown MDP.
+      - Monte-Carlo Policy Evaluation
+      - Temporal-Difference Learning
+      - TD(lambda)
   - Lecture 5 Model-free Control:
     - Optimize the value function of an unknown MDP.
+      - On-Policy Monte-Carlo Control
+      - On-Policy TD Learning
+      - Off-Policy Learning
+        - Q-Learning
   - Sacle up to real practical problems: Use function approximation.
     - Lecture 6: Function approximation for value based algorithms 
+      - Incremental Methods
+      - Batch Methods
+        - DQN
     - Lecture 7: Function approximation for policy based algorithms
+      - Finite-Difference Policy Gradient
+      - Monte-Carlo Policy Gradient
+      - Actor-Critic Policy Gradient
 
 
 ### Lecture 4: Model-Free Prediction (for unknown MDP)
