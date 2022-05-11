@@ -116,6 +116,7 @@ Textbook is *Reinforcement Learning: An Introduction* by Richard S. Sutton and A
     - Optimize the value function of an unknown MDP.
       - On-Policy Monte-Carlo Control
       - On-Policy TD Learning
+        - Sarsa
       - Off-Policy Learning
         - Q-Learning
   - Sacle up to real practical problems: Use function approximation.
